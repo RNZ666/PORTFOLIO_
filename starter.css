@@ -1,0 +1,149 @@
+main{
+    flex: 1;
+}
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #bebbbb;
+
+   
+}
+
+a.me-4:hover svg {
+    fill: #bebbbb;
+}
+
+a:hover svg.bi-instagram {
+    fill: #bebbbb;
+}
+
+.card:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card {
+    animation: fadeIn 0.8s ease-in-out;
+    box-shadow:gray 0 0 10px ;
+}
+
+.card-title{
+    font-family: 'Passion One', sans-serif;
+    margin-bottom: 20px;
+    
+}
+
+.card-text{
+    margin-bottom: 10px;
+}
+
+.card-img-top{
+    height: 200px;
+    
+}
+
+.color-overlay {
+    background-color: rgba(0, 0, 0, 0.4);
+    min-height: 60vh;
+}
+
+.custom-margin {
+    margin-top: 6rem; 
+    margin-bottom: 6rem; 
+}
+
+footer {
+    background-color: #ffc436;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    
+}
+
+footer a {
+    color: rgb(255, 255, 255);
+    
+}
+
+footer:hover {
+    color: #000000;
+}
+
+h1 {
+    animation: slideInFromLeft 0.8s ease-in-out;
+    font-family: 'Bebas Neue', sans-serif;
+}
+
+header {
+    background: no-repeat center center;
+    background-size: cover;
+    color: rgb(0, 0, 0);
+}
+
+.lead{
+    
+    font-family: 'Ysabeau SC', sans-serif;
+    font-weight: 300;
+    font-size: 25px;
+}
+
+.nav-item{
+    
+    border-radius: 1px;
+    
+}
+.nav-link{ 
+    transition: all 0.3s ease;
+    color: rgb(0, 0, 0);
+    text-shadow:0 0 3px rgb(255, 255, 255);
+    
+  }
+  .nav-link:hover{
+    background:linear-gradient(#ffc436, rgb(132, 132, 132));
+    border-radius: 5px;
+}
+
+.singleCol {
+    
+    max-width: 750px;
+}
+
+.text-center img{
+    height: 300px;
+    width: 250px;
+}
+
+
+
+@media (max-width: 767.98px) {
+    .color-overlay {
+        min-height: 30vh;
+    }
+}
+
+
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes slideInFromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-100%);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
